@@ -1,0 +1,128 @@
+/* Reset default styles */
+body {
+    font-family: 'Bangers', cursive;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #4834d4, #686de0);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-collapse ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-collapse ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .nav-collapse ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  
+  .nav-collapse ul li a:hover {
+    color: #000000;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  
+  .article {
+    grid-column: 1 / 2; /* Article spans first column */
+  }
+  
+  .image {
+    grid-column: 2 / 3; /* Image spans second column */
+  }
+  
+  .team-member h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto; /* Automatically sized rows */
+    gap: 20px; /* Gap between columns */
+}
+
+#top{
+    font-size: 30px;
+}
+
+.content {
+    grid-column: 1 / 2; /* Content column spanning first column */
+    margin-top: 80px; /* Add margin from the top */
+    margin-left: 200px; /* Add margin from the left */
+}
+
+.image {
+    grid-column: 2 / 3; /* Image column spanning second column */
+    margin-top: 30px; /* Add margin from the top */
+    margin-right: 200px; /* Add margin from the left */
+    margin-bottom: 100px;
+}
+
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    /* Adjust container layout for single column */
+    .container {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        gap: 10px; /* Reduce the gap between items for mobile */
+        justify-items: center; /* Center align items horizontally */
+    }
+
+    /* Ensure content takes full width and is centered */
+    .content {
+        grid-column: 1 / 2; /* Content column spans full width */
+        margin: 20px; /* Center content and add vertical margin */
+    }
+
+    /* Adjust image layout for mobile */
+    .image {
+        grid-column: 1 / 2; /* Image spans full width */
+        margin: 20px; /* Center image and add vertical margin */
+        margin-bottom: 100px;
+    }
+
+
+}
+
+
+footer {
+    background-color: #30336b;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  
