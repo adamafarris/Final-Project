@@ -58,6 +58,16 @@ header {
   object-fit: cover; /* Ensures photos are nicely fitted */
 }
 
+
+
+footer {
+  background-color: #30336b;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .team-container {
     flex-direction: row;
