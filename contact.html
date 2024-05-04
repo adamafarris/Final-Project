@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Fortnite Fan Zone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact-styles.css">
+</head>
+
+<body>
+  <header>
+    <a class="icon">Fortnite Fan Zone</a>
+    <nav class="nav-collapse">
+      <ul>
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="about.html">Meet the Team</a></li>
+        <li class="menu-item active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>If you're interested in joining our team, please fill out the form below!</p>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills" placeholder="Describe your skills"></textarea>
+
+        <label for="message">Why do you want to join us?</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Email: contact@fortnitefanzone.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Mailing Address: 123 Fortnite Blvd, Epic City, EP 12345</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Fortnite Fan Zone</p>
+  </footer>
+</body>
+</html>
