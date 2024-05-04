@@ -35,11 +35,11 @@ body {
   }
 
   .onebox {
-    background: #95afc0;
     padding: 20px;
-    margin: 20px auto;
+    margin: 0 auto;
     width: 90%;
     text-align: center;
+
   }
 
   .button1 a {
@@ -60,71 +60,49 @@ body {
     color: #ffffff;
     text-align: center;
     padding: 12px 20px;
-    position: fixed;
     bottom: 0;
     width: 100%;}
 
-
-
-
- @media screen and (max-width: 767px) {
-
-      .image-container {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        box-shadow: gray 0px 4px 8px 0px;
-      }
-    
-      .image {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        margin-top: 30px;
-      }
-    
-      .image img {
-        width: 100%; 
-        margin-bottom: 30px;
-        transition: transform 1s ease; 
-        border-radius: 5px;
-      }
-    
-      .image img:hover {
-        transform: scale(1.06); 
-      }
+    p {
+      word-wrap: break-word; /* Breaks long words at the end of the line */
+      overflow-wrap: break-word;
     }
-  
+
+    .image-section {
+      gap: 30px;
+    }
+
     @media screen and (min-width: 768px) {
   
-    .image-container {
-      display: flex;
-      justify-content: space-between;
-      box-shadow: gray 0px 4px 8px 0px;
-    }
-    
-    @media screen and (max-width: 767px) {
-      .image-container {
-        flex-direction: column;
+      .image-section {
+        display: flex;
+        justify-content: space-between;
+  
       }
-    }
-    
-    .image {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-      margin: 10px 20px 10px 20px;
-    }
-    
-    .image img {
-      width: 31%;
-      border-radius: 5px;
-      transition: transform 1s ease;
-    }
-    
-    .image img:hover {
-      transform: scale(1.06); 
-    }
-    
-    }
+      
+      @media screen and (max-width: 767px) {
+        .image-section {
+          flex-direction: column;
+        }
+      }
+      
+      .image-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 10px 20px 10px 20px;
+      }
+      
+      .image-section {
+        width: 31%;
+        border-radius: 5px;
+        transition: transform 1s ease;
+       
+      }
+      
+      .image-section:hover {
+        transform: scale(1.06); 
+      }
+      
+      }
