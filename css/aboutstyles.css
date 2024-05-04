@@ -43,11 +43,11 @@ body {
 
   
   .article {
-    grid-column: 1 / 2; /* Article spans first column */
+    grid-column: 1 / 2; 
   }
   
   .image {
-    grid-column: 2 / 3; /* Image spans second column */
+    grid-column: 2 / 3; 
   }
   
   .team-member h2 {
@@ -66,9 +66,9 @@ body {
   
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-template-rows: auto; /* Automatically sized rows */
-    gap: 20px; /* Gap between columns */
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px; 
 }
 
 #top{
@@ -76,38 +76,36 @@ body {
 }
 
 .content {
-    grid-column: 1 / 2; /* Content column spanning first column */
-    margin-top: 80px; /* Add margin from the top */
-    margin-left: 200px; /* Add margin from the left */
+    grid-column: 1 / 2; 
+    margin-top: 80px; 
+    margin-left: 200px; 
 }
 
 .image {
-    grid-column: 2 / 3; /* Image column spanning second column */
-    margin-top: 30px; /* Add margin from the top */
-    margin-right: 200px; /* Add margin from the left */
+    grid-column: 2 / 3; 
+    margin-top: 30px;
+    margin-right: 200px; 
     margin-bottom: 100px;
 }
 
 
-/* Responsive styling for mobile */
+
 @media (max-width: 768px) {
-    /* Adjust container layout for single column */
     .container {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
-        gap: 10px; /* Reduce the gap between items for mobile */
-        justify-items: center; /* Center align items horizontally */
+        grid-template-columns: 1fr; 
+        gap: 10px;
+        justify-items: center; 
     }
 
-    /* Ensure content takes full width and is centered */
     .content {
-        grid-column: 1 / 2; /* Content column spans full width */
-        margin: 20px; /* Center content and add vertical margin */
+        grid-column: 1 / 2; 
+        margin: 20px;
     }
 
-    /* Adjust image layout for mobile */
+
     .image {
-        grid-column: 1 / 2; /* Image spans full width */
-        margin: 20px; /* Center image and add vertical margin */
+        grid-column: 1 / 2; 
+        margin: 20px; 
         margin-bottom: 100px;
     }
 
