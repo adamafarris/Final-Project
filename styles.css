@@ -31,15 +31,15 @@ body {
   }
 
   .nav-collapse ul li a:hover {
-    color: #000000;
-  }
+    color: #000000; }
+
+
 
   .onebox {
     padding: 20px;
     margin: 0 auto;
     width: 90%;
     text-align: center;
-
   }
 
   .button1 a {
@@ -73,37 +73,29 @@ body {
     }
 
     @media screen and (min-width: 768px) {
-  
       .image-section {
-        display: flex;
-        justify-content: space-between;
-  
+          display: flex;
+          align-items: center; 
+          margin: 0 auto; 
       }
-      
-      @media screen and (max-width: 767px) {
-        .image-section {
+  }
+  
+  @media screen and (max-width: 767px) {
+      .image-section {
           flex-direction: column;
-        }
       }
-      
-      .image-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        margin: 10px 20px 10px 20px;
-      }
-      
-      .image-section {
-        width: 30%;
-        border-radius: 5px;
-        transition: transform 1s ease;
-        
-       
-      }
-      
-      .image-section:hover {
-        transform: scale(1.06); 
-      }
-      
-      }
+  }
+  
+  .image-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin: 10px auto; 
+      width: 50%;
+      border-radius: 5px;
+      transition: transform 1s ease;
+  }
+  
+  .image-section:hover {
+      transform: scale(1.06); 
+  }
