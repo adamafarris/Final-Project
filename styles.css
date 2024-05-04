@@ -64,7 +64,7 @@ body {
     width: 100%;}
 
     p {
-      word-wrap: break-word; /* Breaks long words at the end of the line */
+      word-wrap: break-word; 
       overflow-wrap: break-word;
     }
 
