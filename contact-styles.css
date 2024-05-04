@@ -77,13 +77,4 @@ body {
     width: 100%;
   }
   
-  @media (min-width: 600px) {
-    .contact-info {
-      text-align: left;
-    }
-  
-    form input[type="text"], form input[type="email"], form textarea {
-      width: 80%; /* Adjust width for larger screens */
-    }
-  }
   
